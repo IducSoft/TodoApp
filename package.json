@@ -12,8 +12,5 @@
     "vanillaJS"
   ],
   "author": "Isaac urdaneta",
-  "license": "ISC",
-  "dependencies": {
-    "sweetalert": "^2.1.2"
-  }
+  "license": "ISC"
 }
