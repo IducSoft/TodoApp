@@ -1,0 +1,148 @@
+
+
+%flex-layout{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+
+    
+}
+
+
+.navbar{
+    @extend %flex-layout;
+    padding: $base-padding $base-padding * 2;
+    box-shadow: $base-box-shadows;
+    z-index: 998;
+    .site-title{
+
+        font-size: $font-size-lg;
+    }
+
+    .container{
+
+        @extend %flex-layout;
+    }
+
+
+    
+
+    // mobile view
+
+    @include xs{
+    
+        .mobile-view{
+
+            display: block;
+            cursor: pointer;
+        }
+
+        
+
+        .desktop-view{
+
+            display: none;
+        }
+
+        
+
+        
+    }
+
+    // table view
+
+    @include lg{
+
+        .mobile-view{
+
+            display: none;
+        }
+        
+
+        .desktop-view{
+
+            
+            display: block;
+        }
+    }
+
+    // Side bar expansive
+    
+
+    .btn-closed{
+
+        position: fixed;
+        top: 2.5rem;
+        right: 2.5rem;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .side-bar-expasive{
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 60vh;
+        width: 100%;
+        height: auto;
+        // transform: translateY(-101%);
+        transform: translateY(-101%);
+        z-index: 999;
+
+        transition: transform .3s ease-in-out;
+    }
+    
+    .side-bar-noExpansive{
+    
+        transform: translateY(0%)
+    }
+
+
+    ul{
+
+        width: 100%;
+        height: 100%
+    }
+    
+    
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@each $key, $val in $colors {
+    
+    .navbar-#{$key}{
+        @extend .navbar;
+        background-color: $val;
+    }
+}
+
+
+
+
+
+
+
+
+

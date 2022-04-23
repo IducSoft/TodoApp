@@ -1,0 +1,28 @@
+
+
+// Variables and functions
+@import "./modules-sass/functions";
+@import "./modules-sass/variables";
+
+// Base and layout
+
+@import "./modules-sass/base";
+@import "./modules-sass/breakpoints";
+@import "./modules-sass/grid";
+
+// Colors
+
+@import "./modules-sass/colors";
+
+// Components (button, card, navbar);
+
+@import "./modules-sass/components/Card";
+@import "./modules-sass/components/button";
+@import "./modules-sass/components/navbar";
+@import "./modules-sass/components/form";
+
+// Utilities (margin, padding, opacity)
+
+@import "./modules-sass/utilities";
+
+

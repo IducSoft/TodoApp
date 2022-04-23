@@ -1,0 +1,46 @@
+
+// This is my form
+
+.form{
+
+    width: 100%;
+    height: auto;
+    box-shadow: $base-box-shadows;
+    border-radius: $base-border-radius * 2;
+
+    .form-section{
+
+        min-width: 200px;
+        max-width: 600px;
+        height: auto;
+        text-align: center;
+        margin-top: 2rem;
+        label{
+
+            display:block;
+            text-align: left;
+            margin-bottom: .5rem;
+        }
+        
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]{
+
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: $font-size-lg - 0.3;
+        border: 1px solid black;
+        color: black;
+        width: 100%;
+    }
+
+    input[type="text"]:checked,
+    input[type="email"]:checked,
+    input[type="password"]:checked{
+
+        border-radius: 2px solid red;
+    }
+    
+}
